@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  @apply mx-auto
+         3xl:max-w-[1920px] 3xl:px-[0px];
+}
+.container {
+  @apply px-[20px] mx-auto
+         md:px-[20px]
+         lg:max-w-[2094px] lg:px-[118px]
+         xl:max-w-[1152px] xl:px-[0px]
+}

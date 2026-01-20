@@ -12,3 +12,7 @@
          lg:max-w-[2094px] lg:px-[118px]
          xl:max-w-[1152px] xl:px-[0px]
 }
+.search-popup.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}

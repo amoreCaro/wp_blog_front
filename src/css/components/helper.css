@@ -4,7 +4,7 @@
 
 .wrapper {
   @apply mx-auto
-         3xl:max-w-[1920px] 3xl:px-[0px];
+         2xl:max-w-[2040px] 2xl:px-[40px];
 }
 .container {
   @apply px-[20px] mx-auto

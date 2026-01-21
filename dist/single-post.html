@@ -426,13 +426,11 @@
             class="fixed inset-0 z-50 hidden flex items-center justify-center transition-all duration-300">
 
             <!-- Overlay -->
-            <div id="burgerOverlay"
-                class="absolute inset-0 bg-zinc-950/90 backdrop-blur-2xl"></div>
+            <div id="burgerOverlay" class="absolute inset-0 bg-zinc-950/90 backdrop-blur-2xl"></div>
 
             <!-- Close button -->
             <button id="closeBurger" class="absolute top-4 right-4 sm:top-5 sm:right-5 z-50 p-2 sm:p-3 text-zinc-400 hover:text-white hover:bg-white/10 rounded-full transition">
-                <svg class="h-6 w-6 sm:h-8 sm:w-8" fill="none"
-                    stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="h-6 w-6 sm:h-8 sm:w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M6 18L18 6M6 6l12 12"/>
                 </svg>
@@ -441,65 +439,76 @@
             <!-- Content -->
             <div class="relative z-10 w-full h-full flex flex-col items-center">
 
+                <!-- Navigation Title -->
+                <span class="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-2 text-center">
+                    Navigation
+                </span>
+
                 <!-- Navigation -->
-                <nav class="w-full max-w-md sm:max-w-lg flex flex-col gap-3 sm:gap-4 flex-1 justify-center items-center px-4 sm:px-5">
-
-                    <span class="text-xs font-bold uppercase tracking-widest text-zinc-500 mb-2 text-center">
-                        Navigation
-                    </span>
-
-                    <!-- Link -->
-                    <a href="#"
-                    class="group w-full flex items-center justify-between  p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
-                        <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
-                            Where to Go
-                        </span>
-                        <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-
-                    <a href="#" class="group w-full flex items-center justify-between p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
-                        <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
-                            Where to Eat
-                        </span>
-                        <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-
-                    <a href="#" class="group w-full flex items-center justify-between p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
-                        <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
-                            Places to Stay
-                        </span>
-                        <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-
-                        <a href="#" class="group w-full flex items-center justify-between p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
-                        <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
-                            What to Do
-                        </span>
-                        <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
+                <nav class="w-full max-w-md sm:max-w-lg flex-1 flex justify-center items-center px-4 sm:px-5">
+                    <ul class="w-full flex flex-col gap-3 sm:gap-4">
+                        <li>
+                            <a href="#" class="group w-full flex items-center justify-between p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
+                                <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
+                                    Where to Go
+                                </span>
+                                <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="group w-full flex items-center justify-between p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
+                                <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
+                                    Where to Eat
+                                </span>
+                                <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="group w-full flex items-center justify-between p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
+                                <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
+                                    Places to Stay
+                                </span>
+                                <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="group w-full flex items-center justify-between p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/50 hover:bg-zinc-900 transition">
+                                <span class="text-xl sm:text-2xl font-medium text-zinc-200 group-hover:text-white">
+                                    What to Do
+                                </span>
+                                <svg class="h-5 w-5 sm:h-6 sm:w-6 text-zinc-600 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
 
-                <!-- Divider + Socials -->
-                <div class="w-full border-t border-white/5 pt-6 sm:pt-8 pb-8 sm:pb-10">
-                    <div class="max-w-lg mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-                        <a href="#" class="text-zinc-500 hover:text-white text-sm uppercase">Instagram</a>
-                        <a href="#" class="text-zinc-500 hover:text-white text-sm uppercase">Telegram</a>
-                        <a href="#" class="text-zinc-500 hover:text-white text-sm uppercase">Twitter</a>
-                    </div>
-                </div>
+                <!-- Socials Title -->
+                <span class="text-xs font-bold uppercase tracking-widest text-zinc-500 mt-6 mb-2 text-center">
+                    Socials
+                </span>
+
+                <!-- Socials -->
+                <nav class="w-full max-w-lg flex justify-center">
+                    <ul class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                        <li><a href="#" class="text-zinc-500 hover:text-white text-sm uppercase">Instagram</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-white text-sm uppercase">Telegram</a></li>
+                        <li><a href="#" class="text-zinc-500 hover:text-white text-sm uppercase">Twitter</a></li>
+                    </ul>
+                </nav>
+
             </div>
         </div>
     </div>

@@ -1287,9 +1287,6 @@ video {
 .pb-6{
   padding-bottom: 1.5rem;
 }
-.pb-8{
-  padding-bottom: 2rem;
-}
 .pb-\[50px\]{
   padding-bottom: 50px;
 }
@@ -1920,14 +1917,8 @@ video {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
-  .sm\:pb-10{
-    padding-bottom: 2.5rem;
-  }
   .sm\:pb-8{
     padding-bottom: 2rem;
-  }
-  .sm\:pt-8{
-    padding-top: 2rem;
   }
   .sm\:text-2xl{
     font-size: 1.5rem;

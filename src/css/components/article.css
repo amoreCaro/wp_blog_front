@@ -57,8 +57,7 @@
     /* ===================== */
 
     figure {
-      @apply relative my-12 overflow-hidden rounded-xl
-             border border-white/5 bg-neutral-900;
+      @apply relative my-12 rounded-xl;
 
       picture {
         @apply block w-full;
@@ -70,8 +69,10 @@
 
       figcaption {
         @apply px-5 py-4 text-[13px] leading-[1.5]
-               text-white/60 font-light
-               bg-gradient-to-t from-black/60 to-transparent;
+               text-white/60 font-light;
+      }
+      picture {
+        @apply overflow-hidden;
       }
 
       &:hover img {
@@ -80,12 +81,8 @@
 
       &::before {
         content: '';
-        @apply absolute inset-0 border border-white/10 opacity-0
+        @apply absolute inset-0 opacity-0
                transition-opacity duration-500 z-10 pointer-events-none;
-      }
-
-      &:hover::before {
-        @apply opacity-100;
       }
     }
 

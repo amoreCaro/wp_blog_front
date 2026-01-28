@@ -79,8 +79,38 @@
         <main class="main">
             <!-- Single Post -->
             <div class="single-post">
-                <div class="lg:pt-[150px] pt-[75px] lg:pb-[100px] pb-[50px]">
-                    <div class="container mx-auto relative 2xl:max-w-[1152px] xl:px-[0px] lg:px-[120px] px-[48px]">
+                <div class="lg:pt-[120px] pt-[120px] lg:pb-[100px] pb-[50px]">
+                <div class="container mx-auto relative 2xl:max-w-[1152px] xl:px-[0px] lg:px-[120px] px-[48px]">
+                    <nav class="breadcrumbs max-w-[800px] mx-auto pt-8 pb-8 hidden sm:block xl:pl-[0px]" aria-label="Breadcrumb">
+                        <ul class="flex flex-wrap items-center gap-x-4 gap-y-2 text-[12px] leading-[12px] tracking-[0.25em] uppercase font-bold text-[#999]" itemscope itemtype="http://schema.org/BreadcrumbList">
+                            
+                            <li class="flex items-center gap-x-4" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                <a class="hover:text-white transition-colors duration-300" href="/" itemprop="item">
+                                    <span itemprop="name">Home</span>
+                                </a>
+                                <svg class="w-2.5 h-2.5 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 18l6-6-6-6" />
+                                </svg>
+                                <meta itemprop="position" content="1">
+                            </li>
+
+                            <li class="flex items-center gap-x-4">
+                                <a href="#places-to-stay" class="hover:text-white transition-colors duration-300">
+                                    <span>Places to Stay</span>
+                                </a>
+                                <svg class="w-2.5 h-2.5 text-white/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 18l6-6-6-6" />
+                                </svg>
+                            </li>
+
+                            <li class="text-white/40 font-bold tracking-widest">
+                                Vitalik Buterin Lays Out the Hidden Weaknesses
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container mx-auto relative 2xl:max-w-[1152px] xl:px-[0px] lg:px-[120px] px-[48px]">
                         <!-- Content -->
                         <div class="mx-auto max-w-[800px] flex flex-col gap-5 pb-[50px] lg:pb-[100px] xl:pl-[0px]">
                                <a href="#" class="category-chip flex items-center gap-2 rounded-full border border-white px-4 py-1.5 text-white transition-all duration-300 hover:bg-white hover:text-black max-w-[200px] w-fit">
@@ -110,7 +140,7 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
+                </div>
                     <!-- Images -->
                     <div class="w-full max-w-[1920px] mx-auto flex flex-col lg:flex-row px-[20px] xl:px-[40px] 2xl:px-0">
 
@@ -307,150 +337,149 @@
                                 Related Posts
                             </h2>
                             
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
 
-    <!-- CARD -->
-    <div class="flex flex-col gap-4 group">
-        <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
-            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
+                                <!-- CARD -->
+                                <div class="flex flex-col gap-4 group">
+                                    <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
 
-            <figure class="w-full h-full overflow-hidden">
-                <picture class="block w-full h-full">
-                    <img
-                        src="./images/elon.png"
-                        alt="Elon"
-                        class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </picture>
-            </figure>
-        </a>
+                                        <figure class="w-full h-full overflow-hidden">
+                                            <picture class="block w-full h-full">
+                                                <img
+                                                    src="./images/elon.png"
+                                                    alt="Elon"
+                                                    class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                >
+                                            </picture>
+                                        </figure>
+                                    </a>
 
-        <div class="flex flex-col gap-2">
-            <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
-                Elon Musk says X’s new algorithm will be made open source next week
-            </a>
-            <time class="text-sm text-[#C5C5C5]" datetime="2025-04-01">
-                April 1, 2025
-            </time>
-        </div>
-    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
+                                            Elon Musk says X’s new algorithm will be made open source next week
+                                        </a>
+                                        <time class="text-sm text-[#C5C5C5]" datetime="2025-04-01">
+                                            April 1, 2025
+                                        </time>
+                                    </div>
+                                </div>
 
-    <!-- CARD -->
-    <div class="flex flex-col gap-4 group">
-        <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
-            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
+                                <!-- CARD -->
+                                <div class="flex flex-col gap-4 group">
+                                    <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
 
-            <figure class="w-full h-full overflow-hidden">
-                <picture class="block w-full h-full">
-                    <img
-                        src="./images/blockchain.png"
-                        alt="Blockchain"
-                        class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </picture>
-            </figure>
-        </a>
+                                        <figure class="w-full h-full overflow-hidden">
+                                            <picture class="block w-full h-full">
+                                                <img
+                                                    src="./images/blockchain.png"
+                                                    alt="Blockchain"
+                                                    class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                >
+                                            </picture>
+                                        </figure>
+                                    </a>
 
-        <div class="flex flex-col gap-2">
-            <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
-                The Blockchain’s Blind Spot: What is the Oracle Problem?
-            </a>
-            <time class="text-sm text-[#C5C5C5]" datetime="2025-06-04">
-                June 4, 2025
-            </time>
-        </div>
-    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
+                                            The Blockchain’s Blind Spot: What is the Oracle Problem?
+                                        </a>
+                                        <time class="text-sm text-[#C5C5C5]" datetime="2025-06-04">
+                                            June 4, 2025
+                                        </time>
+                                    </div>
+                                </div>
 
-    <!-- CARD -->
-    <div class="flex flex-col gap-4 group">
-        <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
-            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
+                                <!-- CARD -->
+                                <div class="flex flex-col gap-4 group">
+                                    <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
 
-            <figure class="w-full h-full overflow-hidden">
-                <picture class="block w-full h-full">
-                    <img
-                        src="./images/world.png"
-                        alt="World"
-                        class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </picture>
-            </figure>
-        </a>
+                                        <figure class="w-full h-full overflow-hidden">
+                                            <picture class="block w-full h-full">
+                                                <img
+                                                    src="./images/world.png"
+                                                    alt="World"
+                                                    class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                >
+                                            </picture>
+                                        </figure>
+                                    </a>
 
-        <div class="flex flex-col gap-2">
-            <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
-                When regulation isn’t enough: Europe’s strategic vulnerability
-            </a>
-            <time class="text-sm text-[#C5C5C5]" datetime="2026-01-11">
-                January 11, 2026
-            </time>
-        </div>
-    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
+                                            When regulation isn’t enough: Europe’s strategic vulnerability
+                                        </a>
+                                        <time class="text-sm text-[#C5C5C5]" datetime="2026-01-11">
+                                            January 11, 2026
+                                        </time>
+                                    </div>
+                                </div>
 
-    <!-- CARD -->
-    <div class="flex flex-col gap-4 group">
-        <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
-            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
+                                <!-- CARD -->
+                                <div class="flex flex-col gap-4 group">
+                                    <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
 
-            <figure class="w-full h-full overflow-hidden">
-                <picture class="block w-full h-full">
-                    <img
-                        src="./images/ai.png"
-                        alt="AI"
-                        class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </picture>
-            </figure>
-        </a>
+                                        <figure class="w-full h-full overflow-hidden">
+                                            <picture class="block w-full h-full">
+                                                <img
+                                                    src="./images/ai.png"
+                                                    alt="AI"
+                                                    class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                >
+                                            </picture>
+                                        </figure>
+                                    </a>
 
-        <div class="flex flex-col gap-2">
-            <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
-                AI’s dirty secret: fossil fuels, hidden debt and old-school capitalism
-            </a>
-            <time class="text-sm text-[#C5C5C5]" datetime="2025-05-12">
-                May 12, 2025
-            </time>
-        </div>
-    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
+                                            AI’s dirty secret: fossil fuels, hidden debt and old-school capitalism
+                                        </a>
+                                        <time class="text-sm text-[#C5C5C5]" datetime="2025-05-12">
+                                            May 12, 2025
+                                        </time>
+                                    </div>
+                                </div>
 
-    <!-- CARD -->
-    <div class="flex flex-col gap-4 group">
-        <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
-            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
+                                <!-- CARD -->
+                                <div class="flex flex-col gap-4 group">
+                                    <a href="#" class="relative h-52 overflow-hidden cursor-pointer border border-white/10">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700 z-10"></div>
 
-            <figure class="w-full h-full overflow-hidden">
-                <picture class="block w-full h-full">
-                    <img
-                        src="./images/italy_coders.png"
-                        alt="Coders"
-                        class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
-                        loading="lazy"
-                        decoding="async"
-                    >
-                </picture>
-            </figure>
-        </a>
+                                        <figure class="w-full h-full overflow-hidden">
+                                            <picture class="block w-full h-full">
+                                                <img
+                                                    src="./images/italy_coders.png"
+                                                    alt="Coders"
+                                                    class="w-full h-full object-cover transition-transform duration-[1000ms] ease-out group-hover:scale-105"
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                >
+                                            </picture>
+                                        </figure>
+                                    </a>
 
-        <div class="flex flex-col gap-2">
-            <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
-                50% of Italy’s Coders Crashed in 48 Hours After the ChatGPT Ban
-            </a>
-            <time class="text-sm text-[#C5C5C5]" datetime="2025-08-15">
-                August 15, 2025
-            </time>
-        </div>
-    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <a href="#" class="text-white font-semibold text-[16px] leading-snug transition-colors duration-300 group-hover:text-blue-400">
+                                            50% of Italy’s Coders Crashed in 48 Hours After the ChatGPT Ban
+                                        </a>
+                                        <time class="text-sm text-[#C5C5C5]" datetime="2025-08-15">
+                                            August 15, 2025
+                                        </time>
+                                    </div>
+                                </div>
 
-</div>
-
+                            </div>
                         </div>
                     </section>
                 </div>

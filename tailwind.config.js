@@ -11,25 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          indigo: '#6366F1',
-        },
-
-        surface: {
-          dark: '#0F0F11',
-          hover: '#1A1A1F',
-        },
-
-        border: {
-          light: '#232125',
-          hover: '#2F2F35',
-        },
-
-        content: {
-          white: '#FBFBFB',
-          muted: '#A39FA9',
-          ghost: '#6B6B75',
-        },
+        gray: '#9395ABCC',
       },
       screens: {
         'sm': '640px',

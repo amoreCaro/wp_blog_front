@@ -3,10 +3,18 @@
 @tailwind utilities;
 
 
+.l-wrapper {
+  @apply min-h-screen overflow-hidden flex flex-col justify-center;
+}
 
-.wrapper {
-  @apply mx-auto
-         2xl:max-w-[2040px] 2xl:px-[40px];
+.header--white {
+  @apply bg-white text-black;
+}
+
+
+.header--white a,.header--white a svg {
+  @apply text-black; 
+  stroke: currentColor; 
 }
 
 .show {
@@ -33,6 +41,15 @@
   @apply text-blue-600;
 }
 
+.h-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+}
+
 .media-menu__tab {
   @apply
     relative
@@ -46,7 +63,7 @@
     after:bottom-0
     after:left-0
     after:w-full
-    after:h-[3px]
+    after:h-[2px]
     after:bg-blue-500
     after:scale-x-0
     after:origin-left
@@ -58,13 +75,6 @@
   @apply text-black after:scale-x-100;
 }
 
-.container {
-  @apply px-[20px] mx-auto
-         md:px-[20px]
-         lg:max-w-[2094px] lg:px-[118px]
-         xl:max-w-[1152px] xl:px-[0px]
-}
-
 .btn-back {
   @apply fixed top-[200px] left-0 z-50
          flex items-center gap-2
@@ -74,16 +84,70 @@
          transition-[width,padding,background-color] duration-500
          ease-[cubic-bezier(0.22,1,0.36,1)]
          hover:bg-blue-500 hover:w-auto hover:px-[30px] hover:pl-[25px];
+}
 
-  & span {
-    @apply whitespace-nowrap
-           opacity-0 translate-x-3
-           transition-all duration-500 ease-out
-           delay-100;
+.btn-back span {
+  @apply whitespace-nowrap
+         opacity-0 translate-x-3
+         transition-all duration-500 ease-out
+         delay-100;
+}
+
+.btn-back:hover span {
+  @apply opacity-100 translate-x-0 delay-150;
+}
+
+
+/* Ліва сторона: вилітає з легким нахилом вправо */
+@keyframes smooth-reveal {
+  0% {
+    opacity: 0;
+    /* Починаємо: нижче, менше, розмито і з нахилом назад */
+    transform: translateY(60px) scale(0.8) translateX(var(--tw-translate-x)) perspective(1000px) rotateX(-10deg) rotateY(10deg);
+    filter: blur(15px) brightness(0.8);
   }
-
-  &:hover span {
-    @apply opacity-100 translate-x-0 delay-150;
+  100% {
+    opacity: 0.9;
+    /* Фініш: ідеально рівно */
+    transform: translateY(0) scale(1) translateX(var(--tw-translate-x)) perspective(1000px) rotateX(0deg) rotateY(0deg);
+    filter: blur(0) brightness(1);
   }
 }
 
+/* Права сторона: вилітає з легким нахилом вліво (дзеркально) */
+@keyframes smooth-reveal-right {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.8) translateX(var(--tw-translate-x)) perspective(1000px) rotateX(-10deg) rotateY(-10deg);
+    filter: blur(15px) brightness(0.8);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0) scale(1) translateX(var(--tw-translate-x)) perspective(1000px) rotateX(0deg) rotateY(0deg);
+    filter: blur(0) brightness(1);
+  }
+}
+
+.animate-card-smooth {
+  opacity: 0;
+  /* Використовуємо "Quintic" easing для супер-плавного гальмування */
+  animation: smooth-reveal 1.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.animate-card-right {
+  opacity: 0;
+  animation: smooth-reveal-right 1.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  will-change: transform, opacity;
+}
+
+/* Hover-ефект: легке піднесення та насиченість */
+.animate-card-smooth:hover,
+.animate-card-right:hover {
+  opacity: 1 !important;
+  transform: translateY(-15px) scale(1.05) translateX(var(--tw-translate-x)) !important;
+  filter: brightness(1.05) saturate(1.1);
+  transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+  z-index: 50;
+  pointer-events: auto;
+}

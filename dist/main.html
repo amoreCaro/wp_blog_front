@@ -15,11 +15,11 @@
                 <a class="text-xl font-semibold tracking-tight text-white transition-opacity no-underline flex-shrink-0" href="#logo">
                     Travel Guider
                 </a>
-
-                <nav class="hidden flex-1 justify-center lg:flex">
+                <nav class="navigation navigation--white hidden flex-1 justify-center lg:flex">
                     <ul class="flex space-x-3">
+                        
                         <li class="list-none">
-                            <a href="#" class="bg-[#E9F7DD] flex items-center gap-2 rounded-full border border-black/5 px-4 py-1.5 text-black/80 hover:brightness-95 transition-all">
+                            <a href="#" class="flex items-center gap-2 rounded-full border border-white/40 px-4 py-1.5 text-white hover:bg-white hover:text-black transition-all">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1-.553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/>
                                 </svg>
@@ -28,7 +28,7 @@
                         </li>
 
                         <li class="list-none">
-                            <a href="#" class="bg-[#FDF0D0] flex items-center gap-2 rounded-full border border-black/5 px-4 py-1.5 text-black/80 hover:brightness-95 transition-all">
+                            <a href="#" class="flex items-center gap-2 rounded-full border border-white/40 px-4 py-1.5 text-white hover:bg-white hover:text-black transition-all">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="m16 2 2 2-4 4 4 4-2 2-6-6-2 2-4-4-2 2-2-2 4-4 2-2 2 2 6 6Z"/><path d="m2 22 10-10"/><path d="m22 2-5 5"/>
                                 </svg>
@@ -37,7 +37,7 @@
                         </li>
 
                         <li class="list-none">
-                            <a href="#" class="bg-[#E3EEEF] flex items-center gap-2 rounded-full border border-black/5 px-4 py-1.5 text-black/80 hover:brightness-95 transition-all">
+                            <a href="#" class="flex items-center gap-2 rounded-full border border-white/40 px-4 py-1.5 text-white hover:bg-white hover:text-black transition-all">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/>
                                 </svg>
@@ -46,13 +46,14 @@
                         </li>
 
                         <li class="list-none">
-                            <a href="#" class="bg-[#EEE6FC] flex items-center gap-2 rounded-full border border-black/5 px-4 py-1.5 text-black/80 hover:brightness-95 transition-all">
+                            <a href="#" class="flex items-center gap-2 rounded-full border border-white/40 px-4 py-1.5 text-white hover:bg-white hover:text-black transition-all">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <circle cx="12" cy="12" r="8"/><path d="m12 10 2 4h-4l2-4Z"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
                                 </svg>
                                 <span class="text-xs font-medium leading-[16px]">What to Do</span>
                             </a>
                         </li>
+
                     </ul>
                 </nav>
 
@@ -62,13 +63,39 @@
                         <a href="#" class="transition-colors hover:text-blue-400">Contact</a>
                     </div>
                     
+
+                    <label for="theme-toggle" class="inline-flex items-center group relative cursor-pointer">
+                        <input type="checkbox" id="theme-toggle" class="sr-only peer">
+                        
+                        <div class="w-16 h-9 bg-slate-200 rounded-full transition-all duration-500 
+                                    peer-checked:bg-slate-800 group-hover:bg-slate-300">
+                        </div>
+                        
+                        <div class="absolute left-1 top-1 w-7 h-7 bg-white rounded-full shadow-md flex items-center justify-center transition-all duration-500 
+                                    peer-checked:translate-x-7 
+                                    peer-active:scale-95"> <svg class="w-4 h-4 text-amber-500 transition-all duration-500 
+                                        peer-checked:opacity-0 peer-checked:rotate-90 peer-checked:scale-0" 
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" />
+                            </svg>
+
+                            <svg class="absolute w-4 h-4 text-indigo-600 transition-all duration-500 
+                                        opacity-0 -rotate-90 scale-0 
+                                        peer-checked:opacity-100 peer-checked:rotate-0 peer-checked:scale-100" 
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                            </svg>
+                        </div>
+                    </label>
+
+
+
                     <button id="openSearch" class="w-[20px] h-[20px] hover:text-blue-400 transition-colors">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" class="w-full h-full">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-
-                    <button id="openBurgerBtn" class="w-[24px] h-[24px] lg:hidden text-white hover:text-blue-400 transition-colors">
+                    <button id="openBurgerBtn" class="w-[24px] h-[24px] lg:hidden hover:text-blue-400 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-full h-full">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -81,7 +108,7 @@
             <div class="main-page">
                 
                 <section class="hero relative min-h-[700px] 2xl:min-h-[800px] 3xl:min-h-[900px] flex flex-col items-center justify-center bg-white overflow-hidden px-4 font-sans">
-                    <div class="absolute left-0 top-1/2 -translate-y-1/2 hidden xl:grid grid-cols-[repeat(4,min-content)] gap-6 2xl:gap-10 w-max pointer-events-none items-start">
+                    <div class="absolute left-0 top-1/2 -translate-y-1/2 grid grid-cols-[repeat(4,min-content)] gap-6 2xl:gap-10 w-max pointer-events-none items-start">
 
                         <div class="space-y-4 2xl:space-y-8 3xl:space-y-12 mt-8 2xl:mt-12 3xl:mt-16">
                             <div class="animate-card-smooth [animation-delay:600ms] h-48 w-48 2xl:h-64 2xl:w-64 3xl:h-80 3xl:w-80 max-w-full bg-gray-200 rounded-2xl overflow-hidden shadow-lg -translate-x-[25%]">
@@ -104,11 +131,9 @@
                                 </figure>
                             </div>
                             <div class="animate-card-smooth [animation-delay:550ms] h-[160px] w-[160px] 2xl:h-[210px] 2xl:w-[210px] 3xl:h-[280px] 3xl:w-[280px] max-w-full bg-gray-200 rounded-2xl overflow-hidden shadow-lg -translate-x-[60%]">
-
-                                    <picture class="block w-full h-full">
-                                        <img src="./images/surfer.png" class="object-cover w-full h-full" alt="Desert">
-                                    </picture>
-
+                                <picture class="block w-full h-full">
+                                    <img src="./images/surfer.png" class="object-cover w-full h-full" alt="Desert">
+                                </picture>
                             </div>
                         </div>
 
@@ -196,7 +221,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="absolute right-0 top-1/2 -translate-y-1/2 hidden xl:grid grid-cols-[repeat(4,min-content)] gap-6 2xl:gap-10 w-max pointer-events-none items-start">
+                    <div class="absolute right-0 top-1/2 -translate-y-1/2 grid grid-cols-[repeat(4,min-content)] gap-6 2xl:gap-10 w-max pointer-events-none items-start">
                         
                         <div class="space-y-4 2xl:space-y-8 3xl:space-y-12 pt-[145px] 2xl:pt-[200px] 3xl:pt-[230px]">
                             <div class="animate-card-right [animation-delay:50ms] h-20 w-20 2xl:h-[100px] 2xl:w-[100px] 3xl:h-[150px] 3xl:w-[150px] max-w-full bg-gray-200 rounded-2xl overflow-hidden shadow-lg translate-x-[140%] 2xl:translate-x-[170%] 3xl:translate-x-[140%]">
@@ -485,7 +510,7 @@
             </div>
         </footer>
         <!-- Search Popup -->
-        <div id="searchPopup" class="fixed inset-0 z-50 hidden items-start justify-center pt-24 px-5 transition-all duration-300">
+        <div id="searchPopup" class="fixed inset-0 z-[1000] hidden items-start justify-center pt-24 px-5 transition-all duration-300">
             <div id="searchPopupOverlay" class="absolute inset-0 bg-zinc-950/80 backdrop-blur-xl"></div>
 
             <div class="relative w-full max-w-2xl z-10 transform transition-all">
@@ -535,13 +560,13 @@
         </div>
         <!-- Burger Menu -->
         <div id="burgerMenu"
-            class="fixed inset-0 z-50 hidden flex items-center justify-center transition-all duration-300">
+            class="fixed inset-0 z-[1000] hidden flex items-center justify-center transition-all duration-300">
 
             <!-- Overlay -->
             <div id="burgerOverlay" class="absolute inset-0 bg-zinc-950/90 backdrop-blur-2xl"></div>
 
             <!-- Close button -->
-            <button id="closeBurger" class="absolute top-4 right-4 sm:top-5 sm:right-5 z-50 p-2 sm:p-3 text-zinc-400 hover:text-white hover:bg-white/10 rounded-full transition">
+            <button id="closeBurger" class="absolute top-4 right-4 sm:top-4 sm:right-5 z-50 p-2 sm:p-3 text-zinc-400 hover:text-white hover:bg-white/10 rounded-full transition">
                 <svg class="h-6 w-6 sm:h-8 sm:w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M6 18L18 6M6 6l12 12"/>
